@@ -1,4 +1,4 @@
-# Elevvo Tech: Responsive SaaS Landing Page
+# Responsive SaaS Landing Page
 
 A responsive landing page for **Elevvo Tech**, a project management SaaS product, built with pure HTML, CSS and JavaScript. It includes a dark/light theme toggle, a simulated signup and login flow, and a free trial dashboard.
 
@@ -62,7 +62,7 @@ Elevvo-Tech-Responsive-Landing-Page/
 
 1. Open the project folder
 ```bash
-   cd Elevvo-Tech-Responsive-Landing-Page
+   cd Responsive-Landing-Page
 ```
 2. Open `code.html` in your browser (double-click it, or use the VS Code Live Server extension).
 
