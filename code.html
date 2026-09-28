@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevvo Tech - Project Management SaaS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="code.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container navbar">
+            <a href="#" class="logo">Elevvo Tech</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#" class="cta-button" id="nav-signin">Sign In</a></li>
+                    <li><a href="#" class="cta-button primary free-trial-btn">Free Trial</a></li>
+                    <li><button id="theme-toggle" aria-label="Toggle dark/light mode"><i class="fas fa-moon"></i></button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1>Revolutionize Your Workflow with Elevvo Tech</h1>
+                    <p>Our SaaS tool simplifies project management and team collaboration, helping you achieve more, faster.</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="cta-button large primary free-trial-btn">Start 14-Day Free Trial</a>
+                        <a href="#" class="cta-button large secondary">Watch Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="signup hidden" id="signup-section">
+            <div class="container">
+                <div class="form-container">
+                    <h2>Create Your Free Trial Account</h2>
+                    <form id="signup-form">
+                        <div class="form-group">
+                            <label for="signup-name">Full Name</label>
+                            <input type="text" id="signup-name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-email">Email Address</label>
+                            <input type="email" id="signup-email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-password">Password</label>
+                            <input type="password" id="signup-password" placeholder="********" required>
+                        </div>
+                        <button type="submit" class="cta-button primary w-100">Sign Up</button>
+                    </form>
+                    <p class="form-footer">Already have an account? <a href="#" id="show-login">Log in here</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="login hidden" id="login-section">
+            <div class="container">
+                <div class="form-container">
+                    <h2>Log In to Your Account</h2>
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="login-email">Email Address</label>
+                            <input type="email" id="login-email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" placeholder="********" required>
+                        </div>
+                        <button type="submit" class="cta-button primary w-100">Log In</button>
+                    </form>
+                    <p class="form-footer">Don't have an account? <a href="#" id="show-signup">Sign up for a free trial</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="dashboard hidden" id="dashboard-section">
+            <div class="container">
+                <div class="dashboard-header">
+                    <h2>Dashboard</h2>
+                    <button id="logout-btn" class="logout-btn">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                </div>
+                <div class="welcome-message">
+                    <h3>Welcome, <span id="user-name">Guest</span>! 🎉</h3>
+                    <p>Enjoy your 14-day journey with us. We're excited to have you on board.</p>
+                </div>
+                <div class="trial-card">
+                    <div class="trial-info">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <h4>Free Trial Ends In <span id="days-left">14</span> Days</h4>
+                            <p>Upgrade to a paid plan anytime to continue using all features.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="cta-button">Upgrade Now</a>
+                </div>
+                <hr>
+                <div class="quick-actions">
+                    <h4>Quick Actions</h4>
+                    <div class="action-buttons">
+                        <button class="action-btn"><i class="fas fa-plus"></i> New Project</button>
+                        <button class="action-btn"><i class="fas fa-chart-line"></i> View Analytics</button>
+                        <button class="action-btn"><i class="fas fa-cogs"></i> Settings</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="container">
+                <h2 class="section-heading">Powerful Features to Boost Your Productivity</h2>
+                <p class="section-subtitle">Discover what our tool can do for you.</p>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="icon"><i class="fas fa-palette"></i></div>
+                        <h3>Intuitive Design</h3>
+                        <p>A clean and user-friendly interface that's easy to navigate.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <h3>Blazing Fast</h3>
+                        <p>Optimized for speed and performance, no more waiting.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon"><i class="fas fa-lock"></i></div>
+                        <h3>Secure & Private</h3>
+                        <p>Your data is protected with state-of-the-art security measures.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon"><i class="fas fa-headset"></i></div>
+                        <h3>24/7 Support</h3>
+                        <p>Our dedicated support team is always ready to help you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <h2 class="section-heading">What Our Customers Say</h2>
+        <p class="section-subtitle">Read success stories from our satisfied users.</p>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p class="quote">"Elevvo Tech has completely transformed the way my team collaborates. Our productivity has gone up by 40%!"</p>
+                <div class="author">
+                    <div class="initials-circle" style="background-color: #94d1d1;">JF</div>
+                    <div>
+                        <h4>Javeria Fatima</h4>
+                        <p>CEO, Innovate Co.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p class="quote">"The user interface is a game-changer. It's so intuitive, my team adopted it in a single day."</p>
+                <div class="author">
+                    <div class="initials-circle" style="background-color: #77DD77;">MF</div>
+                    <div>
+                        <h4>Muhammad Faizan</h4>
+                        <p>Project Manager, Growth Inc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p class="quote">"Excellent support and robust features. It's the perfect tool for any growing business."</p>
+                <div class="author">
+                    <div class="initials-circle" style="background-color: #FFB347;">UU</div>
+                    <div>
+                        <h4>Ubaid Umar</h4>
+                        <p>Founder, Creative Hub</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <h2 class="section-heading">Simple & Transparent Pricing</h2>
+                <p class="section-subtitle">Choose the plan that's right for you.</p>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Basic Plan</h3>
+                        <div class="price">$19<span>/mo</span></div>
+                        <p class="price-subtext">For individuals getting started</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 5 projects</li>
+                            <li><i class="fas fa-check"></i> Basic analytics</li>
+                            <li><i class="fas fa-check"></i> Community support</li>
+                        </ul>
+                        <a href="#" class="cta-button primary">Choose Plan</a>
+                    </div>
+                    <div class="pricing-card primary">
+                        <span class="popular-badge">Most Popular</span>
+                        <h3>Pro Plan</h3>
+                        <div class="price">$49<span>/mo</span></div>
+                        <p class="price-subtext">For growing teams and businesses</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Unlimited projects</li>
+                            <li><i class="fas fa-check"></i> Advanced analytics</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                            <li><i class="fas fa-check"></i> Custom integrations</li>
+                        </ul>
+                        <a href="#" class="cta-button">Choose Plan</a>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>Enterprise</h3>
+                        <div class="price">Contact Us</div>
+                        <p class="price-subtext">For large-scale organizations</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Everything in Pro</li>
+                            <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                            <li><i class="fas fa-check"></i> On-premise deployment</li>
+                            <li><i class="fas fa-check"></i> Custom security features</li>
+                        </ul>
+                        <a href="#" class="cta-button primary">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to Start Your Free Trial?</h2>
+                <p>Join thousands of users who have streamlined their work with Elevvo Tech.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="cta-button large free-trial-btn">Get Started Today</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Elevvo Tech</h4>
+                    <p>A modern solution for your business needs.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Elevvo Tech. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="code.js"></script>
+</body>
+</html>
